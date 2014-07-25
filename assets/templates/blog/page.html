@@ -1,0 +1,23 @@
+<div class="col-md-12">
+    <div class="form-group">
+        <input ng-model="query" class="form-control"  type="text" placeholder="Search...">
+    </div>
+
+    <div class="jumbotron" ng-repeat="item in blog | filter:query">
+        <h2>{{item.title |uppercase}}</h2>
+
+        <p >{{item.description | limitTo: 200}}<span>...</span></p>
+
+        <p><a href='#/blog/{{item.id}}/' class="btn btn-primary btn-lg">Learn more</a></p>
+    </div>
+
+    <ul class="pagination pagination-sm">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
