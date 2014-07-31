@@ -10,4 +10,4 @@ deploy:
   app: angularblog
   
 notifications:
-  hipchat: [2155a62ede1dcda2353f5f268633bc]@[codeship]
+  hipchat: 2155a62ede1dcda2353f5f268633bc@codeship
