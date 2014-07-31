@@ -3,3 +3,8 @@ language: node_js
 # test on two node.js versions: 0.6 and 0.8
 node_js:
   - 0.8
+  
+deploy:
+  provider: heroku
+  api_key: 70c2c7cd-0ab7-42ce-beba-d6d1119ff76a
+  app: angularblog
