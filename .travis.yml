@@ -8,3 +8,6 @@ deploy:
   provider: heroku
   api_key: 70c2c7cd-0ab7-42ce-beba-d6d1119ff76a
   app: angularblog
+  
+notifications:
+  hipchat: [2155a62ede1dcda2353f5f268633bc]@[codeship]
